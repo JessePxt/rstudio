@@ -4,26 +4,73 @@ output: html_document
 date: "`r Sys.Date()`"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Universidade Federal do Ceará – UFC
+Faculdade de Economia, Administração, Atuária e Contabilidade – FEAAC
+Curso de Ciências Atuariais
+Disciplina: Teoria do Risco
+Profa
+. Iana Jucá
+Lista de Exercícios 2 – Modelo do risco individual
+Questão 1 Uma seguradora emite uma apólice de seguro de vida temporário por 1 ano para um grupo, com as
+seguintes características:
+Idade Número
+de Vidas
+Probabilidade
+de um sinistro
+Valor do
+Benefício ($)
+60 1.000 0,02 10
+70 500 0,05 5
+80 200 0,20 2
+Utilizando o MRI, calcule 𝐸[𝑆] e 𝑉𝑎𝑟(𝑆).
+Questão 2 Um contrato de seguro de vida em grupo cobrindo vidas independentes é classificado em três faixas etárias
+distintas.
+Faixas
+etárias
+Número de
+indivíduos
+Probabilidade
+de sinistro por vida
+Parâmetros da Distribuição Exponencial do
+Valor de um Sinistro
+18-35 400 0,03 5
+36-50 300 0,07 3
+51-65 200 0,10 2
+1 Qual é a média e variância da distribuição exponencial do valor do sinistro para cada faixa etária?
+2 Qual é a média e a variância dos sinistros agregados para as 900 vidas?
+Questão 3 A frota de caminhões de uma transportadora pode ser dividida em duas categorias de risco, da seguinte
+forma:
+Para cada caminhão
+Classe Número de
+caminhões
+Probabilidade
+de acidente
+Distribuição do valor do sinistro
+dado que um acidente ocorreu
+1 100 0,30 Uniforme em (0, 100)
+2 400 0,10 Exponencial com média 50
+Determine 𝐸[𝑆] e 𝑉𝑎𝑟(𝑆) pelo MRI.
+Questão 4 Uma seguradora tem uma carteira de n riscos independentes composta da seguinte maneira:
+• Para cada risco a probabilidade de um sinistro é 0,10
+• O valor de cada sinistro, dado que ocorreu um sinistro tem f.d.p.,
+
+
+  
+=
+0 caso contrário
+1,5 - x 0 x 1
+f (x) Bi
+• Determine a média e a variância da distribuição de B, i.e., a distribuição do valor de um sinistro.
+• Determine 𝐸[𝑆] e 𝑉𝑎𝑟(𝑆) para os n riscos independentes.
+Questão 5 O modelo de probabilidade para a distribuição de sinistros anuais por membro em um plano de saúde com
+100 membros é mostrado na seguinte tabela:
+Distribuição de gastos anuais por
+membro dado que um sinistro ocorreu
+Serviços Probabilidade
+de sinistro
+Média Variância
+Consulta 0,70 160 4.900
+Cirurgia 0,20 600 20.000
+Exame 0,50 240 8.100
+Determine 𝐸[𝑆] e 𝑉𝑎𝑟(𝑆).
+Questões do Ferreira (2002): p. 29 e 30, questões 1, 2 e 3 .
